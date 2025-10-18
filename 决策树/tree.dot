@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="x[1] <= 70.0\ngini = 0.469\nsamples = 8\nvalue = [3, 5]"] ;
+1 [label="x[0] <= 1.65\ngini = 0.48\nsamples = 5\nvalue = [3, 2]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="x[1] <= 55.0\ngini = 0.444\nsamples = 3\nvalue = [1, 2]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
